@@ -1,0 +1,745 @@
+[gd_scene load_steps=79 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.00392157, 0.670588, 0.145098, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=27]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.0470588, 0.615686, 0.0745098, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=28]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.0745098, 0.701961, 0.188235, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=29]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.0588235, 0.556863, 0.14902, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=30]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=10]
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0, 0.0392157, 0.701961, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=31]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=32]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=25]
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_color = Color( 0.917647, 1, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=33]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=34]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=35]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=36]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=37]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.321569, 0.0392157, 0.0392157, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=38]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=19]
+
+[sub_resource type="ConcavePolygonShape" id=39]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=40]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=41]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=42]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=43]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=44]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=45]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=46]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=47]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=48]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=49]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=50]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=51]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=52]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=53]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=54]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=55]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=56]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_color = Color( 0.113725, 0.266667, 1, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=59]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=60]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=61]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=62]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=63]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=64]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=65]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=66]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=67]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=68]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=69]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=70]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=71]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=72]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=73]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=74]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=75]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=76]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=20]
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_color = Color( 0.321569, 1, 0.909804, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=77]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=18]
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_color = Color( 0.0235294, 1, 0, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=57]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0, 1, 0.113725, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=58]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=78]
+
+[sub_resource type="SpatialMaterial" id=81]
+albedo_color = Color( 0, 0.00784314, 1, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=79]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="SpatialMaterial" id=82]
+albedo_color = Color( 0.0588235, 0, 1, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=80]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[node name="build" type="Spatial"]
+transform = Transform( 1.53827, 0, 0, 0, 1.303, 0, 0, 0, 1.57542, -0.00157166, 0.00139046, -1.14441e-05 )
+
+[node name="1stFloor" type="Spatial" parent="."]
+
+[node name="1Fwall1" type="MeshInstance" parent="1stFloor"]
+transform = Transform( 0.249557, 0, 0, 0, 3.58343, 0, 0, 0, 5.04196, 0.0238581, 0.0444455, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1Fwall1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1Fwall1/StaticBody"]
+shape = SubResource( 27 )
+
+[node name="1Fwall2" type="MeshInstance" parent="1stFloor"]
+transform = Transform( 0.249557, 0, 0, 0, 3.58343, 0, 0, 0, 5.04196, 7.99551, 0.0444455, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1Fwall2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1Fwall2/StaticBody"]
+shape = SubResource( 28 )
+
+[node name="1Fwall3" type="MeshInstance" parent="1stFloor"]
+transform = Transform( -0.000357854, 0, 4.22696, 0, 3.58343, 0, -0.249557, 0, -0.00862395, 3.99529, 0.0444455, -5.1558 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1Fwall3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1Fwall3/StaticBody"]
+shape = SubResource( 29 )
+
+[node name="1Fwall4" type="MeshInstance" parent="1stFloor"]
+transform = Transform( -0.000357854, 0, 4.22696, 0, 3.58343, 0, -0.249557, 0, -0.00862395, 4.00936, 0.0444455, 5.28239 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 6 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1Fwall4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1Fwall4/StaticBody"]
+shape = SubResource( 30 )
+
+[node name="1stFwindow" type="MeshInstance" parent="1stFloor"]
+transform = Transform( 0.170998, 0, 0, 0, 1.19835, 0, 0, 0, 1.19808, 8.1886, 1.20556, -3.20571 )
+mesh = SubResource( 10 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 11 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1stFwindow"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1stFwindow/StaticBody"]
+shape = SubResource( 31 )
+
+[node name="1stFwindow2" type="MeshInstance" parent="1stFloor"]
+transform = Transform( 0.170998, 0, 0, 0, 1.19835, 0, 0, 0, 1.19808, 8.1886, 1.20556, 3.21794 )
+mesh = SubResource( 10 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 11 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/1stFwindow2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/1stFwindow2/StaticBody"]
+shape = SubResource( 32 )
+
+[node name="door" type="MeshInstance" parent="1stFloor"]
+transform = Transform( 0.207039, 0, 0, 0, 2.53419, 0, 0, 0, 1.3841, 8.21664, -0.623075, 0 )
+mesh = SubResource( 25 )
+material/0 = SubResource( 26 )
+
+[node name="StaticBody" type="StaticBody" parent="1stFloor/door"]
+
+[node name="CollisionShape" type="CollisionShape" parent="1stFloor/door/StaticBody"]
+shape = SubResource( 33 )
+
+[node name="2ndFloor" type="Spatial" parent="."]
+transform = Transform( 0.999036, 0, 0, 0, 0.999036, 0, 0, 0, 0.999036, 0, 7.61272, 0 )
+
+[node name="2Fwall1" type="MeshInstance" parent="2ndFloor"]
+transform = Transform( 0.249557, 0, 0, 0, 3.58343, 0, 0, 0, 5.04196, 0.0238581, 0.0444455, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 14 )
+
+[node name="StaticBody" type="StaticBody" parent="2ndFloor/2Fwall1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="2ndFloor/2Fwall1/StaticBody"]
+shape = SubResource( 34 )
+
+[node name="2Fwall2" type="MeshInstance" parent="2ndFloor"]
+transform = Transform( 0.249557, 0, 0, 0, 3.58343, 0, 0, 0, 5.04196, 7.99551, 0.0444455, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 15 )
+
+[node name="StaticBody" type="StaticBody" parent="2ndFloor/2Fwall2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="2ndFloor/2Fwall2/StaticBody"]
+shape = SubResource( 35 )
+
+[node name="2Fwall3" type="MeshInstance" parent="2ndFloor"]
+transform = Transform( -0.000357854, 0, 4.22696, 0, 3.58343, 0, -0.249557, 0, -0.00862395, 3.99529, 0.0444455, -5.1558 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 16 )
+
+[node name="StaticBody" type="StaticBody" parent="2ndFloor/2Fwall3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="2ndFloor/2Fwall3/StaticBody"]
+shape = SubResource( 36 )
+
+[node name="2Fwall4" type="MeshInstance" parent="2ndFloor"]
+transform = Transform( -0.000357854, 0, 4.22696, 0, 3.58343, 0, -0.249557, 0, -0.00862395, 4.00936, 0.0444455, 5.28239 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 17 )
+
+[node name="StaticBody" type="StaticBody" parent="2ndFloor/2Fwall4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="2ndFloor/2Fwall4/StaticBody"]
+shape = SubResource( 37 )
+
+[node name="floor" type="MeshInstance" parent="."]
+transform = Transform( 4.70976, 0, 0, 0, 0.22207, 0, 0, 0, 6.08038, 4.04464, -3.32927, 0.0560179 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../1stFloor")
+material/0 = SubResource( 8 )
+
+[node name="StaticBody" type="StaticBody" parent="floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="floor/StaticBody"]
+shape = SubResource( 38 )
+
+[node name="siri" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 2.05227, 0, 0, 0, 1.14345, 0, 3.28342, -1.41814 )
+
+[node name="siri1" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -3.0237, -2.6247 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri1/StaticBody"]
+shape = SubResource( 39 )
+
+[node name="siri2" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -2.87272, -2.15602 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri2/StaticBody"]
+shape = SubResource( 40 )
+
+[node name="siri3" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -2.68609, -1.67247 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri3/StaticBody"]
+shape = SubResource( 41 )
+
+[node name="siri4" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -2.49702, -1.21032 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri4/StaticBody"]
+shape = SubResource( 42 )
+
+[node name="siri5" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -2.30724, -0.736243 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri5/StaticBody"]
+shape = SubResource( 43 )
+
+[node name="siri6" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -2.13793, -0.254667 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri6/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="siri7" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.95491, 0.221721 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri7/StaticBody"]
+shape = SubResource( 45 )
+
+[node name="siri8" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.78083, 0.698288 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri8/StaticBody"]
+shape = SubResource( 46 )
+
+[node name="siri9" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.61443, 1.17547 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri9/StaticBody"]
+shape = SubResource( 47 )
+
+[node name="siri10" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.42915, 1.65468 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri10/StaticBody"]
+shape = SubResource( 48 )
+
+[node name="siri11" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.24961, 2.13823 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri11"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri11/StaticBody"]
+shape = SubResource( 49 )
+
+[node name="siri12" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -1.06564, 2.61733 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri12"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri12/StaticBody"]
+shape = SubResource( 50 )
+
+[node name="siri13" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -0.882066, 3.09321 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri13"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri13/StaticBody"]
+shape = SubResource( 51 )
+
+[node name="siri14" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505062, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -0.703546, 3.57829 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri14"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri14/StaticBody"]
+shape = SubResource( 52 )
+
+[node name="siri15" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505061, 0, 0, 0, 0.099515, 0, 0, 0, 0.246878, 1.50423, -0.530452, 4.03058 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri15"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri15/StaticBody"]
+shape = SubResource( 53 )
+
+[node name="siri16" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505061, 0, 0, 0, 0.099515, 0, 0, 0, 0.246877, 1.50423, -0.34872, 4.48854 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri16"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri16/StaticBody"]
+shape = SubResource( 54 )
+
+[node name="siri17" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505061, 0, 0, 0, 0.099515, 0, 0, 0, 0.246877, 1.50423, -0.166875, 4.96012 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri17"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri17/StaticBody"]
+shape = SubResource( 55 )
+
+[node name="siri18" type="MeshInstance" parent="siri"]
+transform = Transform( 0.505061, 0, 0, 0, 0.099515, 0, 0, 0, 0.235253, 1.50423, 0.0174059, 5.42909 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri/siri18"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri/siri18/StaticBody"]
+shape = SubResource( 56 )
+
+[node name="siri2" type="Spatial" parent="."]
+transform = Transform( -0.00664655, 0, -2.18818, 0, 4.04657, 0, 1.99207, 0, -0.00791142, 29.261, 8.94081, -3.48143 )
+
+[node name="siri1" type="MeshInstance" parent="siri2"]
+transform = Transform( 2.74737, 0, 0.00225155, 0, 0.0806498, 0, 0.00352293, 0, 1.90986, 1.76295, -3.02371, -2.18172 )
+mesh = SubResource( 19 )
+material/0 = SubResource( 24 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri1/StaticBody"]
+shape = SubResource( 59 )
+
+[node name="siri2" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -2.87272, -1.71304 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri2/StaticBody"]
+shape = SubResource( 60 )
+
+[node name="siri3" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -2.68609, -1.22949 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri3/StaticBody"]
+shape = SubResource( 61 )
+
+[node name="siri4" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -2.49703, -0.767337 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri4/StaticBody"]
+shape = SubResource( 62 )
+
+[node name="siri5" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -2.30724, -0.293266 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri5/StaticBody"]
+shape = SubResource( 63 )
+
+[node name="siri6" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -2.13793, 0.188313 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri6/StaticBody"]
+shape = SubResource( 64 )
+
+[node name="siri7" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.95491, 0.664701 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri7/StaticBody"]
+shape = SubResource( 65 )
+
+[node name="siri8" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.78083, 1.14127 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri8/StaticBody"]
+shape = SubResource( 66 )
+
+[node name="siri9" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.61443, 1.61845 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri9/StaticBody"]
+shape = SubResource( 67 )
+
+[node name="siri10" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.42915, 2.09766 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri10/StaticBody"]
+shape = SubResource( 68 )
+
+[node name="siri11" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.24961, 2.58121 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri11"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri11/StaticBody"]
+shape = SubResource( 69 )
+
+[node name="siri12" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 1.16415e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -1.06564, 3.06031 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri12"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri12/StaticBody"]
+shape = SubResource( 70 )
+
+[node name="siri13" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 3.49246e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -0.882066, 3.53619 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri13"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri13/StaticBody"]
+shape = SubResource( 71 )
+
+[node name="siri14" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505062, 0, 3.49246e-10, 0, 0.0995151, 0, -1.16415e-10, 0, 0.246878, 1.76295, -0.703546, 4.02128 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri14"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri14/StaticBody"]
+shape = SubResource( 72 )
+
+[node name="siri15" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505061, 0, 1.16415e-10, 0, 0.0995151, 0, -2.32831e-10, 0, 0.246878, 1.76295, -0.530452, 4.47356 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri15"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri15/StaticBody"]
+shape = SubResource( 73 )
+
+[node name="siri16" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505061, 0, 4.65661e-10, 0, 0.0995151, 0, 1.16415e-10, 0, 0.246877, 1.76295, -0.34872, 4.93153 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri16"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri16/StaticBody"]
+shape = SubResource( 74 )
+
+[node name="siri17" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505061, 0, 4.65661e-10, 0, 0.0995151, 0, 1.16415e-10, 0, 0.246877, 1.76295, -0.166875, 5.4031 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri17"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri17/StaticBody"]
+shape = SubResource( 75 )
+
+[node name="siri18" type="MeshInstance" parent="siri2"]
+transform = Transform( 0.505061, 0, 1.74623e-10, 0, 0.0995151, 0, 1.16415e-10, 0, 0.235253, 1.76295, 0.017406, 5.87207 )
+mesh = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/siri18"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/siri18/StaticBody"]
+shape = SubResource( 76 )
+
+[node name="stopsiri" type="MeshInstance" parent="siri2"]
+transform = Transform( 1.99292, 0, 0, 0, 0.0740596, 0, 0, 0, 1.75632, 1.78382, 0.103576, 7.83424 )
+mesh = SubResource( 20 )
+material/0 = SubResource( 23 )
+
+[node name="StaticBody" type="StaticBody" parent="siri2/stopsiri"]
+
+[node name="CollisionShape" type="CollisionShape" parent="siri2/stopsiri/StaticBody"]
+shape = SubResource( 77 )
+
+[node name="center" type="Spatial" parent="."]
+
+[node name="center1" type="MeshInstance" parent="center"]
+transform = Transform( 4.21974, 0, 0, 0, 0.253495, 0, 0, 0, 1.47282, 3.99445, 3.8198, -3.92484 )
+mesh = SubResource( 18 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 21 )
+
+[node name="StaticBody" type="StaticBody" parent="center/center1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="center/center1/StaticBody"]
+shape = SubResource( 57 )
+
+[node name="center2" type="MeshInstance" parent="center"]
+transform = Transform( 1.37727, 0, 0, 0, 0.253495, 0, 0, 0, 4.0217, 6.44966, 3.8198, 1.49309 )
+mesh = SubResource( 18 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 22 )
+
+[node name="StaticBody" type="StaticBody" parent="center/center2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="center/center2/StaticBody"]
+shape = SubResource( 58 )
+
+[node name="lift" type="Spatial" parent="."]
+
+[node name="lift1" type="MeshInstance" parent="lift"]
+transform = Transform( 1, 0, 0, 0, 0.125126, 0, 0, 0, 0.999999, 7.14392, 6.93585, -2.54523 )
+mesh = SubResource( 78 )
+material/0 = SubResource( 81 )
+
+[node name="StaticBody" type="StaticBody" parent="lift/lift1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="lift/lift1/StaticBody"]
+shape = SubResource( 79 )
+
+[node name="lift2" type="MeshInstance" parent="lift"]
+transform = Transform( 0.445622, 0, 0, 0, 0.125126, 0, 0, 0, 0.999999, 7.30522, 9.35809, -2.54523 )
+mesh = SubResource( 78 )
+material/0 = SubResource( 82 )
+
+[node name="StaticBody" type="StaticBody" parent="lift/lift2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="lift/lift2/StaticBody"]
+shape = SubResource( 80 )

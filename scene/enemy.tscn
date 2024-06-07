@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/enemy.gd" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=5]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.0313726, 0.00392157, 0.239216, 1 )
+
+[sub_resource type="PrismMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.00392157, 0.717647, 0.537255, 1 )
+
+[node name="enemy" type="Area"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1.44912, 0, 0, 0, 0.619167, 0, 0, 0, 0.25205, 0, 0.442189, 0 )
+shape = SubResource( 5 )
+
+[node name="down" type="MeshInstance" parent="."]
+transform = Transform( 1.46338, 0, 0, 0, 0.194615, 0, 0, 0, 0.228189, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="spike" type="MeshInstance" parent="."]
+transform = Transform( 0.386435, 0, 0, 0, 0.460089, 0, 0, 0, 0.228189, -1.07491, 0.624946, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="spike2" type="MeshInstance" parent="."]
+transform = Transform( 0.386435, 0, 0, 0, 0.460089, 0, 0, 0, 0.228189, 1.05913, 0.624946, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="spike3" type="MeshInstance" parent="."]
+transform = Transform( 0.386435, 0, 0, 0, 0.460089, 0, 0, 0, 0.228189, -0.344334, 0.624946, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="spike4" type="MeshInstance" parent="."]
+transform = Transform( 0.386435, 0, 0, 0, 0.460089, 0, 0, 0, 0.228189, 0.3574, 0.624946, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[connection signal="body_entered" from="." to="." method="_on_enemy_body_entered"]
