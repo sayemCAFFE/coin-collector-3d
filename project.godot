@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="3d Game"
-run/main_scene="res://scene/main_scene.tscn"
+run/main_scene="res://scene/sign.tscn"
 config/icon="res://icon.png"
 
 [autoload]
