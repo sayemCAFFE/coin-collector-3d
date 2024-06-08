@@ -9,3 +9,6 @@ signal speed_power()
 signal bed_speed()
  
 signal time_power()
+
+signal win()
+signal lose()

@@ -5,5 +5,6 @@ func _ready():
 
 func _on_enemy_body_entered(body):
 	if body.is_in_group("player"):
-		get_tree().reload_current_scene()
+		GlobalSignals.emit_signal("lose")
+		get_tree().change_scene("res://scene/sign.tscn")
 		print("You Lose")

@@ -6,4 +6,5 @@ func _ready():
 
 func _on_Area_body_entered(body):
 	if body.is_in_group("player"):
-		get_tree().reload_current_scene()
+		GlobalSignals.emit_signal("lose")
+		get_tree().change_scene("res://scene/sign.tscn")

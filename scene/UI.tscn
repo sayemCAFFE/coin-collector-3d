@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/UI.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=2]
@@ -12,6 +12,14 @@ size = 40
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
 size = 40
 font_data = ExtResource( 2 )
 
@@ -45,5 +53,23 @@ custom_fonts/font = SubResource( 3 )
 text = "Time : 0"
 
 [node name="gameTimer" type="Timer" parent="."]
+
+[node name="winLabel" type="Label" parent="."]
+margin_left = 880.0
+margin_top = 544.0
+margin_right = 1012.0
+margin_bottom = 590.0
+custom_fonts/font = SubResource( 4 )
+text = "Win : 0"
+align = 1
+valign = 1
+
+[node name="loseLabel" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 544.0
+margin_right = 162.0
+margin_bottom = 590.0
+custom_fonts/font = SubResource( 5 )
+text = "Lose : 0"
 
 [connection signal="timeout" from="gameTimer" to="." method="_on_gameTimer_timeout"]
