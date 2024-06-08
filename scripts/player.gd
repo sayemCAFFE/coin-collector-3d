@@ -54,6 +54,9 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP)
 
 func _input(event):
+	if Input.is_action_pressed("reload"):
+		get_tree().reload_current_scene()
+	
 	if Input.is_action_just_pressed("ui_cancel"):
 		if captured:
 			captured = false
