@@ -7,3 +7,5 @@ signal lose_score()
 
 signal speed_power()
 signal bed_speed()
+ 
+signal time_power()

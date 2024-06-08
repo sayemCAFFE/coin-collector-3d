@@ -8,7 +8,7 @@ extents = Vector3( 0.532094, 1, 1 )
 [sub_resource type="SphereMesh" id=2]
 
 [sub_resource type="SpatialMaterial" id=3]
-albedo_color = Color( 1, 0, 0.133333, 1 )
+albedo_color = Color( 0.117647, 0.0117647, 0.247059, 1 )
 
 [node name="loseScore" type="Area"]
 script = ExtResource( 1 )

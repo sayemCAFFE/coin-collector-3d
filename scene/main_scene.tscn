@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scene/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scene/build.tscn" type="PackedScene" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://scene/bedSpeed.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scene/loseScore.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scene/Mostscore.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scene/dead.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scene/timePower.tscn" type="PackedScene" id=13]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -92,7 +94,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9027, 6.54973, -15.2087 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9515, 6.54973, 0.49865 )
 
 [node name="tree14" parent="trees" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6907, 6.54973, 5.48509 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3052, 6.54973, 5.48509 )
 
 [node name="tree15" parent="trees" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9265, 6.54973, 34.9051 )
@@ -137,7 +139,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30.5404, 6.54973, 22.1058 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8775, 6.54973, -18.7076 )
 
 [node name="tree30" parent="trees" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5684, 6.54973, 2.8605 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1863, 6.54973, 15.0615 )
 
 [node name="tree31" parent="trees" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33152, 6.54973, 4.51959 )
@@ -151,16 +153,16 @@ transform = Transform( 1.53827, 0, 0, 0, 1.303, 0, 0, 0, 1.57542, -24.3911, 5.30
 [node name="wall" type="Spatial" parent="."]
 
 [node name="wall" parent="wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5994, 0, -22.6858 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.09201, 0, -22.1386 )
 
 [node name="wall2" parent="wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34.265, 0, -5.67146 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6358, 0, -5.67146 )
 
 [node name="wall3" parent="wall" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.3745, 0, 13.9423 )
 
 [node name="wall4" parent="wall" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2871, 0, -2.59942 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.7544, 0, -0.454571 )
 
 [node name="wall5" parent="wall" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3977, 0, -8.27087 )
@@ -183,7 +185,7 @@ transform = Transform( -0.0243975, 0, -0.999702, 0, 1, 0, 0.999702, 0, -0.024397
 [node name="coin" type="Spatial" parent="."]
 
 [node name="coin" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 8.18002, 1.65819, -8.26388 )
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 13.5772, 13.538, -16.4121 )
 
 [node name="coin2" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 12.2701, 1.65819, 20.8474 )
@@ -198,19 +200,22 @@ transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -13.7077, 1.65819, 8.736
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -32.9548, 1.65819, -22.5698 )
 
 [node name="coin6" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -19.7224, 1.65819, -34.5992 )
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -5.03373, 13.589, -31.7538 )
 
 [node name="coin7" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 33.2776, 1.65819, -29.3063 )
 
 [node name="coin8" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -0.164322, 1.65819, -29.3063 )
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 25.2447, 13.538, 5.49574 )
 
 [node name="coin9" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 24.7119, 1.65819, 36.885 )
 
 [node name="coin10" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 11.5374, 1.65819, 20.2946 )
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -15.148, 2.12065, 21.6728 )
+
+[node name="coin16" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -15.2384, 11.9297, 25.7254 )
 
 [node name="coin11" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -26.635, 1.65819, 38.5363 )
@@ -218,19 +223,31 @@ transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -26.635, 1.65819, 38.536
 [node name="coin12" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -26.635, 1.65819, 38.5363 )
 
+[node name="coin13" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 16.8482, 1.65819, 11.1303 )
+
+[node name="coin14" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -6.08027, 1.65819, -10.8454 )
+
+[node name="coin15" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -8.43824, 1.65819, -36.6067 )
+
 [node name="UI" parent="." instance=ExtResource( 6 )]
 
 [node name="Mostscore" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.355251, 1.83146, 36.2598 )
 
+[node name="Mostscore2" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0772, 13.1041, 21.8127 )
+
 [node name="speed" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.553, 0.820568, -20.2379 )
 
 [node name="badSpeed" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.6695, 0.78213, 1.52648 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.6695, 0.78213, 2.72366 )
 
 [node name="loseScore" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93827, 1.94636, -19.297 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.11313, 1.94636, -19.297 )
 
 [node name="enemies" type="Spatial" parent="."]
 
@@ -276,8 +293,34 @@ transform = Transform( 0.00115188, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.0011518
 [node name="enemy9" parent="enemies" instance=ExtResource( 7 )]
 transform = Transform( 0.00115188, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00115188, -18.2831, 0.886779, -2.28464 )
 
+[node name="enemy17" parent="enemies" instance=ExtResource( 7 )]
+transform = Transform( 0.999832, 0, -0.0183075, 0, 1, 0, 0.0183075, 0, 0.999832, -31.8021, 0.886779, -2.28464 )
+
+[node name="enemy19" parent="enemies" instance=ExtResource( 7 )]
+transform = Transform( 0.999832, 0, -0.0183075, 0, 1, 0, 0.0183075, 0, 0.999832, -28.7631, 0.886779, -4.66908 )
+
+[node name="enemy18" parent="enemies" instance=ExtResource( 7 )]
+transform = Transform( -0.00991336, 0, -0.99995, 0, 1, 0, 0.99995, 0, -0.00991336, -27.5943, 0.886779, -1.48983 )
+
 [node name="enemy10" parent="enemies" instance=ExtResource( 7 )]
 transform = Transform( 0.00115188, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00115188, -9.37743, 0.886779, -18.8628 )
 
 [node name="enemy11" parent="enemies" instance=ExtResource( 7 )]
 transform = Transform( 0.00115188, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00115188, -28.6958, 0.886779, -23.9322 )
+
+[node name="dead" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.6474, 0 )
+
+[node name="timePower" type="Spatial" parent="."]
+
+[node name="timePower" parent="timePower" instance=ExtResource( 13 )]
+transform = Transform( -0.999877, 0, 0.0156549, 0, 1, 0, -0.0156549, 0, -0.999877, -28.1495, 1.69433, -5.7753 )
+
+[node name="timePower2" parent="timePower" instance=ExtResource( 13 )]
+transform = Transform( 0.00626567, 0, 0.99998, 0, 1, 0, -0.99998, 0, 0.00626567, -8.65694, 1.69433, 29.6423 )
+
+[node name="timePower3" parent="timePower" instance=ExtResource( 13 )]
+transform = Transform( 0.00851724, 0, -0.999964, 0, 1, 0, 0.999964, 0, 0.00851724, 21.4238, 1.69433, -21.3091 )
+
+[node name="timePower4" parent="timePower" instance=ExtResource( 13 )]
+transform = Transform( 0.00851724, 0, -0.999964, 0, 1, 0, 0.999964, 0, 0.00851724, -19.7625, 1.69433, -35.9095 )
