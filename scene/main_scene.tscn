@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scene/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scene/build.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://scene/Mostscore.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scene/dead.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scene/timePower.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scene/movingDoor.tscn" type="PackedScene" id=14]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -324,3 +325,6 @@ transform = Transform( 0.00851724, 0, -0.999964, 0, 1, 0, 0.999964, 0, 0.0085172
 
 [node name="timePower4" parent="timePower" instance=ExtResource( 13 )]
 transform = Transform( 0.00851724, 0, -0.999964, 0, 1, 0, 0.999964, 0, 0.00851724, -19.7625, 1.69433, -35.9095 )
+
+[node name="movingDoor" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26347, 1.73418, -10.7961 )

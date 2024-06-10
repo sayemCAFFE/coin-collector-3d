@@ -15,7 +15,14 @@ func _ready():
 	GlobalSignals.connect("time_power", self, "_time_power")
 	GlobalSignals.connect("win", self, "_win")
 	GlobalSignals.connect("lose", self, "_lose")
+	GlobalSignals.connect("can_use", self, "_can_use")
 	$scoreLabel.text = "Score :"+str(score)
+
+func _can_use(state):
+	if state:
+		$"%useLabel".visible = true
+	else:
+		$"%useLabel".visible = false
 
 func _win():
 	win += 1

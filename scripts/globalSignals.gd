@@ -12,3 +12,5 @@ signal time_power()
 
 signal win()
 signal lose()
+
+signal can_use(state)

@@ -11,7 +11,7 @@ height = 2.0
 albedo_color = Color( 0, 0.576471, 0.933333, 1 )
 
 [node name="player" type="KinematicBody" groups=["player"]]
-transform = Transform( 1, 0, 0, 0, 0.90488, 0, 0, 0, 0.929242, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.90488, 0, 0, 0, 0.929242, 0, 1.10856, 0 )
 script = ExtResource( 1 )
 
 [node name="playerCollision" type="CollisionShape" parent="."]
@@ -21,10 +21,14 @@ shape = SubResource( 1 )
 [node name="head" type="Spatial" parent="."]
 unique_name_in_owner = true
 
-[node name="Camera" type="Camera" parent="head"]
-transform = Transform( 1, 0, 0, 0, 0.933418, 0.358791, 0, -0.358791, 0.933418, -0.0383215, 1.60466, 3.06437 )
+[node name="SpringArm" type="SpringArm" parent="head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25761, 0 )
+spring_length = 6.0
+
+[node name="Camera" type="Camera" parent="head/SpringArm"]
+transform = Transform( 1, 0, 0, 0, 1.02793, 0.405759, 0, -0.395121, 1.00098, -0.0383215, 1.60466, 3.06437 )
 
 [node name="sprite" type="MeshInstance" parent="."]
-transform = Transform( 0.760548, -3.32851e-08, -3.33229e-08, -3.21793e-08, 0.00173449, -0.736179, 3.62776e-08, 0.826973, 0.00194841, 0, 0, 0 )
+transform = Transform( 0.760548, -3.32851e-08, -3.33229e-08, -3.21793e-08, 0.00173449, -0.736179, 3.62776e-08, 0.826973, 0.00194841, 0, 0, 0.0255932 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
