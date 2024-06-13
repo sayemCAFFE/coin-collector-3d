@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 GlobalSignals="*res://scripts/globalSignals.gd"
+GlobalVars="*res://scripts/globalVars.gd"
 
 [gui]
 

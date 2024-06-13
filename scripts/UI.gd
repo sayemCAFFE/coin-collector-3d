@@ -3,8 +3,8 @@ extends Control
 var score = 0
 var game_time = 60
 
-var win = 0
-var lose = 0
+#var win = 0
+#var lose = 0
 
 func _ready():
 	$gameTimer.start()
@@ -26,11 +26,13 @@ func _can_use(state):
 
 func _win():
 #	win += 1
-	$winLabel.text = "Win : "+str(win)
+	GlobalVars.win_count += 1
+	$winLabel.text = "Win : "+str(GlobalVars.win_count)
 
 func _lose():
 #	lose += 1
-	$loseLabel.text = "Lose : "+str(lose)
+	GlobalVars.lose_count += 1
+	$loseLabel.text = "Lose : "+str(GlobalVars.lose_count)
 
 func _time_power():
 	game_time += 10
