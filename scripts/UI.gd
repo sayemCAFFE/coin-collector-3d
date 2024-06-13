@@ -25,11 +25,11 @@ func _can_use(state):
 		$"%useLabel".visible = false
 
 func _win():
-	win += 1
+#	win += 1
 	$winLabel.text = "Win : "+str(win)
 
 func _lose():
-	lose += 1
+#	lose += 1
 	$loseLabel.text = "Lose : "+str(lose)
 
 func _time_power():

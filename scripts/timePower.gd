@@ -6,5 +6,5 @@ func _ready():
 
 func _on_timePower_body_entered(body):
 	if body.is_in_group("player"):
-		GlobalSignals.emit_signal("time_power")
+		GlobalSignals.emit_signal("lose")
 		queue_free()
