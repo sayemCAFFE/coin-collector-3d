@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/treasure Body.gd" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 1, 1.4298, 1 )
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.258824, 0.0313726, 0.0313726, 1 )
+
+[sub_resource type="CubeMesh" id=8]
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 1, 0.192157, 0, 1 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 1, 0.499778, 1 )
+
+[node name="treasure" type="Spatial"]
+
+[node name="hinge" type="Spatial" parent="."]
+transform = Transform( 0.000876999, 0.604897, 0.00192498, -0.999998, 0.00144384, 0.00174297, 0.00180614, -0.003309, 0.962466, 0, 2.553, 1.433 )
+
+[node name="treasures" type="Spatial" parent="hinge"]
+
+[node name="treasure Body" type="StaticBody" parent="hinge/treasures"]
+unique_name_in_owner = true
+transform = Transform( 0.400451, -9.5315e-10, -6.98492e-10, -3.7744e-11, 3.68126, 0, -4.65661e-10, 9.31323e-10, 2.14972, 0, -2.32831e-10, 2.18263 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="hinge/treasures/treasure Body"]
+transform = Transform( 1, 0, 0, 0, 0.706064, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="treasure" type="MeshInstance" parent="hinge/treasures"]
+transform = Transform( 0.400451, -4.87489e-10, 0, 1.97815e-11, 3.68126, 0, -1.74623e-10, 9.31323e-10, 2.14972, 0, -2.32831e-10, 2.18263 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 2 )
+
+[node name="treasure2" type="MeshInstance" parent="hinge/treasures"]
+transform = Transform( 1.45174, 0.00323841, 0.00131135, 0.00323842, 3.68848, 0.0047344, 0.0014156, 0.00511083, 2.20018, 1.87387, -0.0098218, 2.23264 )
+mesh = SubResource( 8 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 9 )
+
+[node name="treasureAnimation" type="AnimationPlayer" parent="hinge"]
+
+[node name="treasureArea" type="Area" parent="."]
+transform = Transform( -0.430262, 0.000435145, -3.3836, 9.00163e-08, 0.39375, -4.87435e-05, 24.8706, 5.07575e-06, 0.0039261, 0, 0.859423, 3.53237 )
+
+[node name="treasureCollision" type="CollisionShape" parent="treasureArea"]
+transform = Transform( 0.142386, -1.57234e-06, 0.00103798, 1.30775e-07, 8.57498, -0.00049117, 0.00044499, 0.000866718, 1.08175, -4.32134e-07, 1.04056, 0.000133846 )
+shape = SubResource( 7 )

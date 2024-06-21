@@ -101,5 +101,7 @@ margin_right = 564.0
 margin_bottom = 588.0
 custom_fonts/font = SubResource( 7 )
 text = "Key : 0"
+align = 1
+valign = 1
 
 [connection signal="timeout" from="gameTimer" to="." method="_on_gameTimer_timeout"]

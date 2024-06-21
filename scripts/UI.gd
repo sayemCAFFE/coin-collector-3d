@@ -3,9 +3,6 @@ extends Control
 var score = 0
 var game_time = 60
 
-#var win = 0
-#var lose = 0
-
 func _ready():
 	$gameTimer.start()
 	$timeLabel.text = "Time : "+str(game_time)
@@ -31,7 +28,6 @@ func _door_locked():
 	$"%useLabel".text = "LOCKED"
 	$"%useLabel".visible = true
 
-
 func _can_use(state):
 	if state:
 		$"%useLabel".text = "Prees e"
@@ -54,15 +50,16 @@ func _time_power():
 func _score_change():
 	score += 1
 	$scoreLabel.text = "Score :"+str(score)
-	if score == 20:
+	if score >= 20:
 		GlobalSignals.emit_signal("win")
 		get_tree().reload_current_scene()
 
 func _most_score():
 	score += 5
 	$scoreLabel.text = "Score :"+str(score)
-	if score == 20:
+	if score >= 20:
 		GlobalSignals.emit_signal("win")
+		get_tree().reload_current_scene()
 	
 
 func _lose_score():

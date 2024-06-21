@@ -112,6 +112,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="BoxShape" id=8]
+extents = Vector3( 1, 0.499778, 1 )
 
 [node name="movingDoor" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0249364, 0 )
@@ -143,7 +144,7 @@ anims/doorAnim = SubResource( 6 )
 transform = Transform( 0.0446941, 0.000528925, -4.11183, 8.99955e-08, 0.39375, -4.87437e-05, 16.5455, -1.34795e-06, 0.0393418, 0, 0.294897, 3.53237 )
 
 [node name="doorCollision" type="CollisionShape" parent="doorArea"]
-transform = Transform( 0.142388, -7.98685e-07, -0.000834213, 1.09035e-08, 6.94983, -0.000275232, -0.000357626, 0.000485671, 1.86912, -9.68575e-07, 3.6807, 0.000473456 )
+transform = Transform( 0.142386, -1.57234e-06, 0.00103798, 1.30775e-07, 8.57498, -0.00049117, 0.00044499, 0.000866718, 1.08175, -4.32134e-07, 1.04056, 0.000133846 )
 shape = SubResource( 8 )
 
 [connection signal="body_entered" from="doorArea" to="hinge/door/doorBody" method="_on_doorArea_body_entered"]
