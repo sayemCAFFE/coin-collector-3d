@@ -111,13 +111,13 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.7 )
 }
 
-[sub_resource type="ConcavePolygonShape" id=4]
+[sub_resource type="BoxShape" id=8]
 
 [node name="movingDoor" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0249364, 0 )
 
 [node name="hinge" type="Spatial" parent="."]
-transform = Transform( 0.999984, -0.00542317, -0.00175562, 0.00542916, 0.99998, 0.00317535, 0.00180614, -0.00330901, 0.962466, 0, 2.553, 1.433 )
+transform = Transform( 0.999984, -0.00542316, -0.00175562, 0.00542916, 0.99998, 0.00317535, 0.00180614, -0.003309, 0.962466, 0, 2.553, 1.433 )
 
 [node name="door" type="MeshInstance" parent="hinge"]
 transform = Transform( 0.400451, 0, 0, 0, 3.68126, 0, 0, 0, 2.14972, 0, 0, 2.18263 )
@@ -143,8 +143,8 @@ anims/doorAnim = SubResource( 6 )
 transform = Transform( 0.0446941, 0.000528925, -4.11183, 8.99955e-08, 0.39375, -4.87437e-05, 16.5455, -1.34795e-06, 0.0393418, 0, 0.294897, 3.53237 )
 
 [node name="doorCollision" type="CollisionShape" parent="doorArea"]
-transform = Transform( 1, 0, 0, 0, 18.1082, 0, 0, 0, 10.6631, 0, 0, 0 )
-shape = SubResource( 4 )
+transform = Transform( 0.142388, -7.98685e-07, -0.000834213, 1.09035e-08, 6.94983, -0.000275232, -0.000357626, 0.000485671, 1.86912, -9.68575e-07, 3.6807, 0.000473456 )
+shape = SubResource( 8 )
 
 [connection signal="body_entered" from="doorArea" to="hinge/door/doorBody" method="_on_doorArea_body_entered"]
 [connection signal="body_exited" from="doorArea" to="hinge/door/doorBody" method="_on_doorArea_body_exited"]

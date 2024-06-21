@@ -16,21 +16,34 @@ func _ready():
 	GlobalSignals.connect("win", self, "_win")
 	GlobalSignals.connect("lose", self, "_lose")
 	GlobalSignals.connect("can_use", self, "_can_use")
+	GlobalSignals.connect("collected_key", self, "_collected_key")
+	GlobalSignals.connect("door_locked", self, "_door_locked")
+	$winLabel.text = "win :"+str(GlobalVars.win_count)
+	$loseLabel.text = "lose :"+str(GlobalVars.lose_count)
 	$scoreLabel.text = "Score :"+str(score)
+	$keyLabel.text = "Key : "+str(GlobalVars.key_count)
+
+func _collected_key(count):
+	GlobalVars.key_count += count
+	$keyLabel.text = "Key : "+str(GlobalVars.key_count)
+
+func _door_locked():
+	$"%useLabel".text = "LOCKED"
+	$"%useLabel".visible = true
+
 
 func _can_use(state):
 	if state:
+		$"%useLabel".text = "Prees e"
 		$"%useLabel".visible = true
 	else:
 		$"%useLabel".visible = false
 
 func _win():
-#	win += 1
 	GlobalVars.win_count += 1
 	$winLabel.text = "Win : "+str(GlobalVars.win_count)
 
 func _lose():
-#	lose += 1
 	GlobalVars.lose_count += 1
 	$loseLabel.text = "Lose : "+str(GlobalVars.lose_count)
 
@@ -43,6 +56,7 @@ func _score_change():
 	$scoreLabel.text = "Score :"+str(score)
 	if score == 20:
 		GlobalSignals.emit_signal("win")
+		get_tree().reload_current_scene()
 
 func _most_score():
 	score += 5

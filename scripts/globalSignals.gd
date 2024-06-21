@@ -14,3 +14,6 @@ signal win()
 signal lose()
 
 signal can_use(state)
+
+signal door_locked()
+signal collected_key(count)
