@@ -3,14 +3,16 @@ extends KinematicBody
 func _ready():
 	GlobalSignals.connect("speed_power", self, "_speed_power")
 	GlobalSignals.connect("bed_speed", self, "_bed_speed")
+	GlobalSignals.connect("climbing", self, "_climbing")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	captured = true
 
 export var speed = 10
 export var accel = 10
 export var gravity = 50
-export var jump = 20
+export var jump = 25
 
+var can_climb = false
 
 var look_rotation: Vector3 = Vector3.ZERO
 onready var head: Spatial = $"%head"
@@ -27,6 +29,10 @@ export var sensitivity: float = 0.2
 
 var captured: bool = true
 
+func _climbing(state):
+	velocity.y = 0
+	can_climb = state
+
 func _speed_power():
 	speed += 10
 
@@ -38,9 +44,17 @@ func _physics_process(delta):
 	head.rotation_degrees.x = look_rotation.x
 	rotation_degrees.y = look_rotation.y
 	
-#	if not is_on_floor():
 	velocity.y -= gravity * delta
-		
+	
+	if can_climb:
+		velocity.y = 0
+		if Input.is_action_pressed("climb_up"):
+			velocity.y = jump
+		elif Input.is_action_pressed("climb_down"):
+			velocity.y = -jump
+	else:
+		velocity.y -= gravity * delta
+	
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump

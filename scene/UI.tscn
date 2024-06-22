@@ -43,16 +43,18 @@ margin_right = 207.0
 margin_bottom = 71.0
 custom_fonts/font = SubResource( 1 )
 text = "Score : 0"
+align = 1
+valign = 1
 
 [node name="useLabel" type="Label" parent="."]
 unique_name_in_owner = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 391.0
-margin_top = 80.0
-margin_right = -458.0
-margin_bottom = -474.0
+margin_left = 128.0
+margin_top = 88.0
+margin_right = -194.0
+margin_bottom = -463.0
 custom_fonts/font = SubResource( 6 )
 text = "Press e"
 align = 1
@@ -65,6 +67,8 @@ margin_right = 1001.0
 margin_bottom = 76.0
 custom_fonts/font = SubResource( 2 )
 text = "Target : 20"
+align = 1
+valign = 1
 
 [node name="timeLabel" type="Label" parent="."]
 margin_left = 400.0
@@ -73,6 +77,8 @@ margin_right = 556.0
 margin_bottom = 72.0
 custom_fonts/font = SubResource( 3 )
 text = "Time : 0"
+align = 1
+valign = 1
 
 [node name="gameTimer" type="Timer" parent="."]
 
@@ -93,6 +99,8 @@ margin_right = 162.0
 margin_bottom = 590.0
 custom_fonts/font = SubResource( 5 )
 text = "Lose : 0"
+align = 1
+valign = 1
 
 [node name="keyLabel" type="Label" parent="."]
 margin_left = 436.0

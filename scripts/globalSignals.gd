@@ -17,3 +17,5 @@ signal can_use(state)
 
 signal door_locked()
 signal collected_key(count)
+
+signal climbing(state)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scene/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scene/build.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://scene/Mostscore.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scene/dead.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scene/timePower.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scene/lader.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scene/key.tscn" type="PackedScene" id=15]
 
 [sub_resource type="CubeMesh" id=1]
@@ -95,7 +96,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9027, 6.54973, -15.2087 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9515, 6.54973, 0.49865 )
 
 [node name="tree14" parent="trees" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3052, 6.54973, 5.48509 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.439, 6.54973, 5.48509 )
 
 [node name="tree15" parent="trees" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9265, 6.54973, 34.9051 )
@@ -210,16 +211,13 @@ transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -5.03373, 13.589, -31.75
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 33.2776, 1.65819, -29.3063 )
 
 [node name="coin8" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 25.2447, 13.538, 5.49574 )
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 22.3785, 13.538, 5.49574 )
 
 [node name="coin9" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 24.7119, 1.65819, 36.885 )
 
 [node name="coin10" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -15.148, 2.12065, 21.6728 )
-
-[node name="coin16" parent="coin" instance=ExtResource( 5 )]
-transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -15.2384, 11.9297, 25.7254 )
 
 [node name="coin11" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -26.635, 1.65819, 38.5363 )
@@ -235,6 +233,12 @@ transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -6.08027, 1.65819, -10.8
 
 [node name="coin15" parent="coin" instance=ExtResource( 5 )]
 transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -8.43824, 1.65819, -36.6067 )
+
+[node name="coin16" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, -15.2384, 11.9297, 25.7254 )
+
+[node name="coin17" parent="coin" instance=ExtResource( 5 )]
+transform = Transform( 1.75797, 0, 0, 0, 1, 0, 0, 0, 1, 16.1226, 9.90507, -16.2511 )
 
 [node name="UI" parent="." instance=ExtResource( 6 )]
 
@@ -331,6 +335,17 @@ transform = Transform( 0.00851724, 0, -0.999964, 0, 1, 0, 0.999964, 0, 0.0085172
 
 [node name="key" parent="." instance=ExtResource( 15 )]
 transform = Transform( 0.629253, 0.777201, 0, -0.777201, 0.629253, 0, 0, 0, 1, 8.04836, 1.19708, 37.1531 )
+
+[node name="Lader" type="Spatial" parent="."]
+
+[node name="lader" parent="Lader" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1.43171, 0, 0, 0, 1, -17.8564, 1.19105, 12.3684 )
+
+[node name="lader2" parent="Lader" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 0.8603, 0, 0, 0, 1, 21.3915, 0.700682, 2.89868 )
+
+[node name="lader3" parent="Lader" instance=ExtResource( 14 )]
+transform = Transform( -0.999991, 0, 0.00422372, 0, 0.8603, 0, -0.00422372, 0, -0.999991, 13.7362, 0.700682, -18.6369 )
 
 [editable path="build"]
 [editable path="build/movingDoor"]

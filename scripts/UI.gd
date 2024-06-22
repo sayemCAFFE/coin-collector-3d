@@ -15,10 +15,18 @@ func _ready():
 	GlobalSignals.connect("can_use", self, "_can_use")
 	GlobalSignals.connect("collected_key", self, "_collected_key")
 	GlobalSignals.connect("door_locked", self, "_door_locked")
+	GlobalSignals.connect("climbing", self, "_climbing")
 	$winLabel.text = "win :"+str(GlobalVars.win_count)
 	$loseLabel.text = "lose :"+str(GlobalVars.lose_count)
 	$scoreLabel.text = "Score :"+str(score)
 	$keyLabel.text = "Key : "+str(GlobalVars.key_count)
+
+func _climbing(state):
+	if state:
+		$"%useLabel".visible = true
+		$"%useLabel".text = "x to climb up / z to climb down"
+	else:
+		$"%useLabel".visible = false
 
 func _collected_key(count):
 	GlobalVars.key_count += count
